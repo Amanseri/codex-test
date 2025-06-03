@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.banner {
+    background-color: #26b6c5;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1 1 350px;
+}
+
+.logo {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.banner-content h2 {
+    margin: 20px 0 10px;
+    font-size: 28px;
+}
+
+.banner-content p {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.demo {
+    background-color: #f3960b;
+}
+
+.pack {
+    background-color: #ff5c5c;
+}
+
+.img-wrapper {
+    flex: 1 1 250px;
+    text-align: right;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.beige {
+    background-color: #f5f0e6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 280px;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.partners {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    width: 120px;
+    height: auto;
+}
+
+.final-cta {
+    background-color: #008e9d;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.kit {
+    background-color: #ff5c5c;
+}
+
+.partner {
+    background-color: #f3960b;
+}
+
+.contact {
+    background-color: #26b6c5;
+}
