@@ -1,11 +1,75 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>finanZ - Test</title>
-</head>
-<body>
-    <h1>Bienvenue sur finanZ</h1>
-    <p>Ce fichier initie le projet Codex.</p>
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+index fd9e0301f4bf11b4c8ed340dfe77b153a9ec6660..be9373f7935c68f2f1040f475850bb021db4c502 100644
+--- a/index.html
++++ b/index.html
+@@ -1,11 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="fr">
+ <head>
+     <meta charset="UTF-8">
+-    <title>finanZ - Test</title>
++    <title>finanZ</title>
++    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+-    <h1>Bienvenue sur finanZ</h1>
+-    <p>Ce fichier initie le projet Codex.</p>
++    <header class="banner">
++        <div class="banner-content">
++            <div class="text-content">
++                <h1 class="logo">finanZ</h1>
++                <h2>Et si apprendre à gérer son argent devenait un jeu d'enfant ?</h2>
++                <p>Découvre finanZ : la plateforme d’éducation financière ludique pour enfants, ados… et parents.</p>
++                <div class="buttons">
++                    <a class="btn demo" href="#">Jouer une démo</a>
++                    <a class="btn pack" href="#">Recevoir un pack découverte gratuit</a>
++                </div>
++            </div>
++            <div class="img-wrapper">
++                <img src="placeholder_cashou.png" alt="Cashou le cochon tirelire">
++            </div>
++        </div>
++    </header>
++
++    <section class="beige features">
++        <h2>1 jeune sur 2 confond revenus et dépenses. C’est là qu’on intervient.</h2>
++        <div class="cards">
++            <div class="card">
++                <img src="placeholder_cashou_6_12.png" alt="Cashou 6-12 ans">
++                <h3>6–12 ans</h3>
++                <p>Apprendre en s’amusant</p>
++            </div>
++            <div class="card">
++                <img src="placeholder_renard.png" alt="Renard 13-18 ans">
++                <h3>13–18 ans</h3>
++                <p>Des défis, des choix…</p>
++            </div>
++            <div class="card">
++                <img src="placeholder_portefeuille.png" alt="Portefeuille adultes">
++                <h3>Adultes</h3>
++                <p>Rattraper le train…</p>
++            </div>
++        </div>
++    </section>
++
++    <section class="partners">
++        <div class="logos">
++            <img src="placeholder_logo1.png" alt="Logo partenaire 1">
++            <img src="placeholder_logo2.png" alt="Logo partenaire 2">
++            <img src="placeholder_logo3.png" alt="Logo partenaire 3">
++        </div>
++    </section>
++
++    <section class="final-cta">
++        <div class="cta-buttons">
++            <a class="btn kit" href="#">Recevoir un kit découverte</a>
++            <a class="btn partner" href="#">Demander un partenariat</a>
++            <a class="btn contact" href="#">Contacter l’équipe</a>
++        </div>
++    </section>
+ </body>
+ </html>
+ 
+EOF
+)
