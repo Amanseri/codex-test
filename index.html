@@ -1,75 +1,91 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/index.html b/index.html
-index fd9e0301f4bf11b4c8ed340dfe77b153a9ec6660..be9373f7935c68f2f1040f475850bb021db4c502 100644
---- a/index.html
-+++ b/index.html
-@@ -1,11 +1,63 @@
- <!DOCTYPE html>
- <html lang="fr">
- <head>
-     <meta charset="UTF-8">
--    <title>finanZ - Test</title>
-+    <title>finanZ</title>
-+    <link rel="stylesheet" href="style.css">
- </head>
- <body>
--    <h1>Bienvenue sur finanZ</h1>
--    <p>Ce fichier initie le projet Codex.</p>
-+    <header class="banner">
-+        <div class="banner-content">
-+            <div class="text-content">
-+                <h1 class="logo">finanZ</h1>
-+                <h2>Et si apprendre à gérer son argent devenait un jeu d'enfant ?</h2>
-+                <p>Découvre finanZ : la plateforme d’éducation financière ludique pour enfants, ados… et parents.</p>
-+                <div class="buttons">
-+                    <a class="btn demo" href="#">Jouer une démo</a>
-+                    <a class="btn pack" href="#">Recevoir un pack découverte gratuit</a>
-+                </div>
-+            </div>
-+            <div class="img-wrapper">
-+                <img src="placeholder_cashou.png" alt="Cashou le cochon tirelire">
-+            </div>
-+        </div>
-+    </header>
-+
-+    <section class="beige features">
-+        <h2>1 jeune sur 2 confond revenus et dépenses. C’est là qu’on intervient.</h2>
-+        <div class="cards">
-+            <div class="card">
-+                <img src="placeholder_cashou_6_12.png" alt="Cashou 6-12 ans">
-+                <h3>6–12 ans</h3>
-+                <p>Apprendre en s’amusant</p>
-+            </div>
-+            <div class="card">
-+                <img src="placeholder_renard.png" alt="Renard 13-18 ans">
-+                <h3>13–18 ans</h3>
-+                <p>Des défis, des choix…</p>
-+            </div>
-+            <div class="card">
-+                <img src="placeholder_portefeuille.png" alt="Portefeuille adultes">
-+                <h3>Adultes</h3>
-+                <p>Rattraper le train…</p>
-+            </div>
-+        </div>
-+    </section>
-+
-+    <section class="partners">
-+        <div class="logos">
-+            <img src="placeholder_logo1.png" alt="Logo partenaire 1">
-+            <img src="placeholder_logo2.png" alt="Logo partenaire 2">
-+            <img src="placeholder_logo3.png" alt="Logo partenaire 3">
-+        </div>
-+    </section>
-+
-+    <section class="final-cta">
-+        <div class="cta-buttons">
-+            <a class="btn kit" href="#">Recevoir un kit découverte</a>
-+            <a class="btn partner" href="#">Demander un partenariat</a>
-+            <a class="btn contact" href="#">Contacter l’équipe</a>
-+        </div>
-+    </section>
- </body>
- </html>
- 
-EOF
-)
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucam Finances & Trading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="brand">Lucam <span>Finances & Trading</span></div>
+      <a class="btn btn-outline" href="#contact">Prendre rendez-vous</a>
+    </nav>
+
+    <div class="container hero-grid">
+      <div>
+        <p class="tag">Conseil financier • Trading • Formation</p>
+        <h1>Donnez une stratégie claire à votre argent.</h1>
+        <p class="subtitle">
+          Nous accompagnons les particuliers et entrepreneurs dans la gestion de patrimoine,
+          l'optimisation des investissements et l'apprentissage du trading responsable.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#services">Découvrir nos services</a>
+          <a class="btn btn-secondary" href="#about">Pourquoi nous choisir</a>
+        </div>
+      </div>
+      <div class="stat-card">
+        <h2>+1 200</h2>
+        <p>clients accompagnés</p>
+        <h2>95%</h2>
+        <p>de satisfaction moyenne</p>
+        <h2>8 ans</h2>
+        <p>d'expertise des marchés</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="section container">
+      <h2>Nos services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Coaching financier</h3>
+          <p>
+            Audit de votre situation, plan d’action personnalisé, suivi mensuel et objectifs mesurables.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Trading accompagné</h3>
+          <p>
+            Méthodologie structurée, gestion du risque, analyses marché et sessions live chaque semaine.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Formations pratiques</h3>
+          <p>
+            Programmes débutant à avancé pour comprendre les marchés, les ETF, actions, crypto et forex.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container about">
+        <div>
+          <h2>Une approche simple, humaine et orientée résultats</h2>
+          <p>
+            Chez Lucam Finances & Trading, nous combinons pédagogie, rigueur et transparence.
+            Notre mission : vous aider à prendre des décisions financières plus sereines,
+            avec des outils concrets et une stratégie durable.
+          </p>
+        </div>
+        <ul>
+          <li>✔ Diagnostic financier offert</li>
+          <li>✔ Plans adaptés à votre profil de risque</li>
+          <li>✔ Accompagnement 1:1 et en groupe</li>
+          <li>✔ Support réactif et reporting clair</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2>Prêt à passer au niveau supérieur ?</h2>
+      <p>Réservez un appel de découverte de 20 minutes avec un conseiller Lucam.</p>
+      <a class="btn btn-primary" href="mailto:contact@lucam-finances-trading.com">contact@lucam-finances-trading.com</a>
+    </section>
+  </main>
+</body>
+</html>
